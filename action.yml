@@ -1,5 +1,5 @@
-name: 'Close Issue'
-description: 'A GitHub action to close an issue'
+name: 'Contributors Only'
+description: "A GitHub action to close an issue if the poster doesn't have write access"
 inputs:
   token:
     description: 'GitHub auth token'
