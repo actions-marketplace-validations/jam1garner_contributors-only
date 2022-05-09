@@ -44,7 +44,7 @@ async function run(): Promise<void> {
 
     core.debug(`User: ${payload.sender.login}`);
 
-    const permissionLevel = octokit.rest.repos.getCollaboratorPermissionLevel({
+    const permissionLevel = await octokit.rest.repos.getCollaboratorPermissionLevel({
       owner: owner,
       repo: repo,
       username: payload.sender.login,
