@@ -7,9 +7,6 @@ inputs:
   repository:
     description: 'The GitHub repository containing the issue'
     default: ${{ github.repository }}
-  issue-number:
-    description: 'The number of the issue to close'
-    default: ${{ github.event.issue.number }}
   comment:
     description: 'A comment to make on the issue before closing'
 runs:
